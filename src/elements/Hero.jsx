@@ -2,6 +2,7 @@ import {motion} from 'motion/react';
 import { ColourfulText } from '../components/ui/colourful-text';
 import { VscGithub } from "react-icons/vsc";
 import { BsDiscord } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Hero() {
   return (
@@ -20,18 +21,21 @@ export default function Hero() {
       </p>
 
     <div className="flex justify-center items-center space-x-8 mb-6 text-2xl text-white">
-  <a href="#" className="hover:text-cyan-700 transition">
+  <a href="https://github.com/Zephyrus2822" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-700 transition">
    <i><VscGithub /></i>
   </a>
-  <a href="#" className="hover:text-indigo-500 transition">
+  <a href="https://discord.gg/vBHcYC3T" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500 transition">
     <i><BsDiscord /></i>
+  </a>
+  <a href="https://www.linkedin.com/in/rudranilchowdhury28/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-800 transition">
+    <i><AiFillLinkedin /></i>
   </a>
 </div>
 
 
       <a
         href="#"
-        className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded-full text-sm transition-all duration-200"
+        className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded-full text-lg transition-all duration-200"
       >
         Write To Me
       </a>

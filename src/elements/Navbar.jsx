@@ -50,7 +50,8 @@ export default function Navbar() {
         </li>
         <li>
           <a
-            href="#resume"
+            href="https://collection.cloudinary.com/dgwma2xax/a704db459dc603b5a0c7f3212b305aac"
+            target="_blank"
             className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition-all duration-200"
           >
             Resume

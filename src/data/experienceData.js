@@ -1,23 +1,23 @@
 // data/experienceData.ts
 export const experienceData = [
   {
-    date: "Dec 2024 - Feb 2025",
-    role: "Software Engineer",
-    company: "Taggle Innovations LLC",
+    date: "Jul 2024 - Sep 2025",
+    role: "Software Developer Intern",
+    company: "Om Softwares Inc.",
     points: [
-      "Developed client, portal, and admin websites ensuring a cohesive design.",
-      "Collaborated with cross-functional teams for scalable architecture.",
+      "Led a team of 8 developers to deliver high-quality software solutions.",
+      "Developed and maintained said applications using proper DevOps strategies and best practises.",
     ],
-    tech: ["React", "NodeJS", "MongoDB", "Firebase"],
+    tech: ["React", "NextJS", "MongoDB", "LangChain", "Docker", "GitHub Actions", "LangGraph"],
   },
   {
-    date: "July 2024 - Dec 2024",
-    role: "Full Stack Web Developer",
-    company: "Blast Catering LLC",
+    date: "May 2025 - Jul 2025",
+    role: "Full Stack Web Developer Intern",
+    company: "Zidio Development",
     points: [
-      "Improved load time by 2× and engagement by 60%.",
-      "Refactored architecture to reduce server load and improve maintainability.",
+      "Developed a responsive web application using MERN stack.",
+      "Deployed the project using Docker and Render, ensuring smooth CI/CD pipelines using GitHub Actions.",
     ],
-    tech: [],
+    tech: ["React", "NodeJS", "MongoDB", "ExpressJS", "Docker", "GitHub Actions"],
   },
 ];
