@@ -3,6 +3,7 @@ import Navbar from "./elements/Navbar";
 import Hero from "./elements/Hero";
 import Experience from "./elements/Experience";
 import CursorTrail from "./components/ui/cursor-trail";
+import Projects from "./elements/Projects";
 
 export default function App() {
   const [showTrail, setShowTrail] = useState(false);
@@ -21,6 +22,7 @@ export default function App() {
       </div>
 
       <CursorTrail active={showTrail} />
+      <Projects />
     </div>
   );
 }

@@ -23,6 +23,14 @@ export default function Navbar() {
     return () => clearInterval(interval);
   }, []);
 
+   const scrollToProjects = (e) => {
+    e.preventDefault();
+    const section = document.getElementById("projects");
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="w-full px-6 md:px-16 py-4 flex items-center justify-between bg-black bg-opacity-70 backdrop-blur-md shadow-md sticky top-0 z-50">
       {/* Left: Time */}
@@ -34,23 +42,18 @@ export default function Navbar() {
       <ul className="flex space-x-4 md:space-x-6">
         <li>
           <a
-            href="#home"
+            href="#hero"
             className="bg-white text-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-all duration-200"
           >
             Home
           </a>
         </li>
         <li>
-          <a
-            href="#projects"
-            className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition-all duration-200"
-          >
-            Projects
-          </a>
+          <a href="#projects" onClick={scrollToProjects} className="bg-white text-black px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-200 transition-all duration-200">Projects</a>
         </li>
         <li>
           <a
-            href="https://collection.cloudinary.com/dgwma2xax/a704db459dc603b5a0c7f3212b305aac"
+            href="/resume.pdf"
             target="_blank"
             className="bg-gray-800 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-gray-700 transition-all duration-200"
           >

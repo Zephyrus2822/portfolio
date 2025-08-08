@@ -21,6 +21,10 @@ body {
   @apply bg-black text-white font-sans;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .cursor-trail {
   position: fixed;
   width: 100px;
