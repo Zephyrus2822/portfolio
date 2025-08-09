@@ -1,24 +1,28 @@
+import Img1 from "../projects_pictures/inkei-landing.png";
+import Img2 from "../projects_pictures/judicio-landing.png";
 
 const projects = [
   {
-    logo: "💡",
-    title: "Project One",
-    short: "AI-based system",
+    logo: Img1,
+    title: "Zenith",
+    short: "AI-powered Work OS",
     description:
-      "An intelligent platform that uses GPT-based AI to automate resume rewriting tailored to job descriptions.",
-    link: "https://example.com/project-one",
-    tech: ["React", "TailwindCSS", "Node.js", "FastAPI"],
+      "A one-stop solution for managing work efficienly including task management, assignment to teams and progress tracking with the help of AI.",
+    live_link: "https://inkei-82g7.vercel.app/",
+    github_link: "https://github.com/Zephyrus2822/inkei",
+    tech: ["React", "TailwindCSS", "Node.js", "FastAPI", "Streamlit", "Docker", "GitHub Actions", "LangChain"],
   },
   {
-    logo: "🚀",
-    title: "Project Two",
-    short: "Fullstack Dashboard",
+    logo: Img2,
+    title: "Judicio",
+    short: "Fullstack Automated Bail Reckoning System",
     description:
-      "A dynamic dashboard built with MERN stack, featuring real-time analytics and secure auth.",
-    link: "https://example.com/project-two",
-    tech: ["MongoDB", "Express", "React", "Node.js", "Chart.js"],
+      "A completely automated Bail Reckoning software made during the Smart India Hackathon (SIH) 2024.",
+    live_link: "https://judicio.vercel.app/",
+    github_link: "https://github.com/Zephyrus2822/judicio",
+    tech: ["MongoDB", "Express", "React", "Node.js", "Docker", "GitHub Actions"],
   },
-  // Add more projects as needed
+
 ];
 
 export default projects;

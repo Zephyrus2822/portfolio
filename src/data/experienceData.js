@@ -1,7 +1,7 @@
 // data/experienceData.ts
 export const experienceData = [
   {
-    date: "Jul 2024 - Sep 2025",
+    date: "Jul 2025 - Sep 2025",
     role: "Software Developer Intern",
     company: "Om Softwares Inc.",
     points: [

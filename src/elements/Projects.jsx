@@ -1,5 +1,5 @@
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import projects from "../data/projectsData"; // Adjust path as needed
+import projects from "../data/projectsData"; 
 
 const Projects = () => {
   return (
@@ -12,32 +12,41 @@ const Projects = () => {
         {projects.map((proj, i) => (
           <div
             key={i}
-            className="bg-neutral-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300"
+            className="bg-neutral-900 rounded-xl p-6 shadow-lg hover:shadow-xl transition duration-300 flex flex-col"
           >
-            {/* Top Section */}
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center space-x-4">
-                <div className="bg-white text-black font-bold text-3xl w-16 h-16 rounded-lg flex items-center justify-center shadow-inner">
-                  {proj.logo}
-                </div>
-                <div>
-                  <h3 className="text-2xl font-semibold">{proj.title}</h3>
-                  <p className="text-sm text-gray-400">{proj.short}</p>
-                </div>
-              </div>
+            {/* Preview Image */}
+            <img
+              src={proj.logo}
+              alt={`${proj.title} preview`}
+              className="w-full h-48 object-cover rounded-lg mb-4"
+            />
 
-              {/* Links */}
-              <div className="space-x-3">
-                <a
-                  href={proj.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-white hover:text-gray-300 transition"
-                  title="View Project"
-                >
-                  <FaExternalLinkAlt className="text-xl" />
-                </a>
-              </div>
+            {/* Title & Short */}
+            <div className="mb-4">
+              <h3 className="text-2xl font-semibold">{proj.title}</h3>
+              <p className="text-sm text-gray-400">{proj.short}</p>
+            </div>
+
+            {/* Links */}
+            <div className="flex space-x-4 mb-6">
+              <a
+                href={proj.live_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white hover:text-gray-300 transition"
+                title="View Project"
+              >
+                <FaExternalLinkAlt /> Live
+              </a>
+              <a
+                href={proj.github_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-white hover:text-gray-300 transition"
+                title="View Code"
+              >
+                <FaGithub /> Code
+              </a>
             </div>
 
             {/* Description */}

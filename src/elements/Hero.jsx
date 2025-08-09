@@ -34,7 +34,7 @@ export default function Hero() {
 
 
       <a
-        href="#"
+        href="#footer"
         className="bg-gray-800 hover:bg-gray-700 text-white px-6 py-2 rounded-full text-lg transition-all duration-200"
       >
         Write To Me
