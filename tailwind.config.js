@@ -48,6 +48,9 @@ export default {
           },
         },
       },
+      boxShadow: {
+        glow: "0 0 8px 2px rgba(59, 130, 246, 0.7), 0 0 16px 4px rgba(147, 51, 234, 0.6)"
+      },
     },
   },
   plugins: [],

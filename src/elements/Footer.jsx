@@ -6,7 +6,7 @@ export default function Footer() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
 
-  const BACKEND_URL = "http://localhost:5001/api/contact" || NULL;
+  const BACKEND_URL =  "https://portfolio-backend-xyz-9f974d592c12.herokuapp.com/" || "http://localhost:5001/api/contact";
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
