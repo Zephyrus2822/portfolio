@@ -19,7 +19,12 @@ router.post("/contact", async (req, res) => {
             from: email,
             to: process.env.USR_EMAIL,
             subject: `Contact Form Submission from ${name}`,
-            text: message,
+            text: `You have received a new message from your portfolio contact form:\n
+Name: ${name}
+Email: ${email}
+
+Message:
+${message}`,
         });
 
         res.status(200).json({ message: "Email sent successfully!" });
